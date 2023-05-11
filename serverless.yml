@@ -1,0 +1,10 @@
+padthai-dietikon:
+  # first execute this to create the bicket with the correct contents
+  component: "@sls-next/serverless-component@1.18.0"
+  # then execute this that the imageOptimizer works
+  #component: "@sls-next/serverless-component@1.19.0-alpha.37"
+  inputs:
+    # imageOptimizer: true
+    bucketRegion: eu-central-1
+    bucketName: "padthai-dietikon"
+    domain: "padthai-dietikon.ch"
