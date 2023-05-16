@@ -33,6 +33,20 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+# Docker
+## Create a local image with the name padthai
+Type the following command in the directory where the Docker file is.
+```
+docker build -t padthai .
+``` 
+
+## Create a local container with the name padthai-test from the padthai image with local port 8080
+```
+docker run -p 8080:80 --name padthai-test padthai
+``` 
+## Open local website hosted in local docker
+http://localhost:8080/
+
 
 # VPS CapRover
 ## Deploy to CapRover
