@@ -46,7 +46,7 @@ const TemporaryBanner: React.FC = () => {
     return (
         <div className={classes.snackbarContainer} style={{ display: open ? 'flex' : 'none' }}>
             <Snackbar
-                anchorOrigin={{ vertical: 'center', horizontal: 'center' }}
+                anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
                 open={open}
                 onClose={handleClose}
                 message="Unser Restaurant bleibt an diesem Tag wegen einer Privatparty geschlossen. Take-Away-Bestellungen sind weiterhin möglich. Vielen Dank für Ihr Verständnis!"
