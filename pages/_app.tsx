@@ -11,6 +11,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import mediaQuery from "css-mediaquery";
 import deepCopy from 'lodash';
 import UAParser from "ua-parser-js";
+import InfoBox from "../components/info-box";
+import TemporaryBanner from "../components/temporary-banner";
 
 const baseTheme = {
   breakpoints: {
@@ -116,7 +118,9 @@ export default class App extends NextApp {
           }
         >
           <CssBaseline />
+
           <ParallaxProvider>
+            <TemporaryBanner />
             <Component {...pageProps} />
           </ParallaxProvider>
         </MaterialThemeProvider>
