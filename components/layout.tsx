@@ -28,6 +28,7 @@ export default function Layout({ children, headerPicture }) {
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Padthai Dietikon" />
                 <meta property="og:image:type" content="image/jpeg" />
+                <link rel="icon" type="image/webp" href="/favicon.webp" />
             </Head>
             <div className={classes.container}>
                 {headerPicture}
