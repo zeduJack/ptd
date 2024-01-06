@@ -22,7 +22,9 @@ const TemporaryBanner: React.FC = () => {
 
     useEffect(() => {
         const currentDate = new Date();
+        currentDate.setHours(0, 0, 0, 0); // Reset time to midnight
         const eventDate = new Date('2024-01-06');
+        eventDate.setHours(0, 0, 0, 0); // Reset time to midnight
         const isEventDay = currentDate.toDateString() === eventDate.toDateString();
 
         if (currentDate <= eventDate) {
